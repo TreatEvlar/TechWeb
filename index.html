@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="login-Btn">
+            <div>
+                <i class="fa-solid fa-circle-user"></i>
+                <span>Log In</span>
+            </div>
+            <span class="closeBtn"><i class="fa-solid fa-xmark" onclick="navClose()"></i></span>
+        </div>
+        <div class="logo">
+            <h1>The Cleanic</h1>
+        </div>
+        
+        <ul>
+            <li><a href="#">Plan</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li id="line"><a href="#">Log In</a></li>
+            <span class="ico"><i class="fa-solid fa-circle-user"></i></span>
+        </ul>
+
+        <div class="navBtn">
+            <button>Book Now</button>
+        </div>
+
+    </nav>
+    
+    <div class="openNavbtn">
+        <i class="fa-solid fa-bars" onclick="navOpen()"></i>
+    </div>
+
+    <!-----Hero-section start----->
+
+    <div class="hero-section">
+        <h1>Remarkably Cleaner. Amazingly Simpler.</h1>
+        <p>Providing spotless cleaning services for busy people <br> since 2035. Always on time, always smiling.</p>
+        <button>Book Now</button>
+    </div>
+
+    <!-----Hero-section end----->
+
+    <!-----contact start----->
+
+    <div class="contact">
+        <div class="container">
+            <h2>Get a Free Estimate</h2>
+            <p>Contact us</p>
+            <div class="input-grid">
+                <label>First name*<input type="text"></label>
+                <label>Last name*<input type="text"></label>
+                <label>Email*<input type="text"></label>
+                <label>Phone number*<input type="text"></label>
+                <label>Address*<input type="text"></label>
+                <label>City*<input type="text"></label>
+                <label>Number of rooms*
+                    <select id="small">
+                        <option></option>
+                        <option>2 bedroom</option>
+                        <option>3 bedroom</option>
+                        <option>4 bedroom</option>
+                    </select>
+                </label>
+                <label>Choose your service*
+                    <select id="big">
+                        <option></option>
+                        <option>Deep cleaning</option>
+                        <option>Laundry</option>
+                        <option>Movine in/out</option>
+                    </select>
+                </label>
+            </div>
+            <button type="submit">Get a Quote</button>
+        </div>
+    </div>
+    
+    <!-----contact end----->
+
+    <!-----review start----->
+
+    <div class="review">
+        <div class="review-page">
+            <h1>Shiny Happy Clients</h1>
+            <div class="cards-review" id="cards-review">
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <!-----review end----->
+
+    <!-----service start----->
+
+    <div class="service">
+        <h1>For Anything You Need</h1>
+        <h2>Our stellar services</h2>
+        <div class="service-box">
+            <div class="box">
+                <img src="./images/5eb534e5cd5b207850f0f0a7c4e17de9.jpg" alt="">
+                <h3>Move In/Move Out</h2>
+            </div>
+            <div class="box">
+                <img src="./images/Man-cleaning-a-bookshelf.jpeg" alt="">
+                <h3>Deep Cleaning</h2>
+            </div>
+            <div class="box">
+                <img src="./images/360_F_907411924_efmc4CAP3jTZFAQ40JVJS0sNhDBZsHoR.jpg" alt="">
+                <h3>Laundry</h2>
+            </div>
+        </div>
+        <div class="services-btn">
+            <button>See All Services</button>
+        </div>
+    </div>
+
+    <!-----service end----->
+
+    <!-----feature start----->
+
+    <div class="feature">
+        <div class="container">
+            <h1>Featured In</h1>
+            <div class="brands">
+                <h2>Latch.</h2>
+                <h2>Stella Maris</h2>
+                <h2>Gasparyan</h2>
+                <h2>VOLVE</h2>
+                <h2>forva</h2>
+            </div>
+        </div>
+    </div>
+    
+    <!-----feature end----->
+
+    <!-----slider start----->
+
+    <div class="slider-container">
+        <h1>Before & After</h1>
+        <h2 id="imageHeading"></h2>
+        <div class="image-container" id="imageContainer"></div>
+        <h3>Before</h3>
+        <h4>After</h4>
+    </div>
+
+    <!-----slider end----->
+
+    <!-----how-it-work start----->
+
+    <div class="how-it-work">
+        <h1>How It Works</h1>
+        <div class="circle-area">
+            <div class="circle">
+                <i class="fa-solid fa-droplet"></i>
+                <p>Choose your desired <br> cleaning service'</p>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-shirt"></i>
+                <p>Use the Cleanic App for <br> laundry pickup</p>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-key"></i>
+                <p>Leave us the keys and <br> we’ll take care of the rest</p>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-house"></i>
+                <p>Welcome back to your <br> home clean home!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-----How-it-work end----->
+
+    <!-----Choose plan start--->
+
+    <div class="choose-plan">
+        <div class="plan">
+            <h1>Our Plans & <br>Special Discounts</h1>
+            <p>
+                I'm a paragraph. Click here to add your own text and edit me. 
+                It's easy. I'm a paragraph. Click here to add your own text and edit me. 
+                It's easy.
+            </p>
+            <button>Choose Your Plan</button>
+        </div>
+
+        <div class="plan-card">
+            <div class="upper">
+                <h1>Best Value</h1>
+                <h2>The Bi-Monthly Plan</h2>
+                <h3><span>$</span>280</h3>
+                <h4>Every month</h4>
+                <button>Select</button>
+            </div>
+            <div class="lower">
+                <h1 id="first"><i class="fa-solid fa-arrow-right-long"></i> I’m a benefit</h1>
+                <h1><i class="fa-solid fa-arrow-right-long"></i> I’m a benefit</h1>
+                <h1><i class="fa-solid fa-arrow-right-long"></i> I’m a benefit</h1>
+                <h1><i class="fa-solid fa-arrow-right-long"></i> I’m a benefit</h1>
+                <h1><i class="fa-solid fa-arrow-right-long"></i> I’m a benefit</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-----Choose plan end----->
+
+    <!-----choose-us start----->
+
+    <div class="choose-us">
+        <div class="choose-image-container"></div>
+        <div class="choose-the-cleanic">
+            <h1>Why Choose The Cleanic</h1>
+            <div class="box">
+                <div class="box-1">
+                    <h2><i class="fa-solid fa-paper-plane"></i>Qualified Team</h2>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It's easy.</p>
+                </div>
+                <div class="box-1">
+                    <h2><i class="fa-solid fa-paper-plane"></i>Same Day Availability</h2>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It's easy.</p>
+                </div>
+                <div class="box-1">
+                    <h2><i class="fa-solid fa-paper-plane"></i>Outstanding Support</h2>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It's easy.</p>
+                </div>
+                <div class="box-1">
+                    <h2><i class="fa-solid fa-paper-plane"></i>Eco-Friendly Materials</h2>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It's easy.</p>
+                </div>
+            </div>
+            <button>Get to Know Us</button>
+        </div>
+    </div>
+
+    <!-----choose-us end----->
+
+    <!-----footer start----->
+
+    <div class="villan-section">
+        <img src="./images/AdvantageFlex-Hanging-Closet-White_FLAT-1-1920x1470.jpg" alt="">
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="square">
+                <h1 id="logo">The cleanic</h1>
+                <button>Book Now</button>
+            </div>
+            <div class="square">
+                <h1>Legal</h1>
+                <p class="tier">Privacy policy</p>
+                <p class="tier">Terms & conditions</p>
+                <p class="tier">Refund policy</p>
+            </div>
+            <div class="square">
+                <h1>Operating Hours</h1>
+                <p class="tier-2">mon - Fri: 8am - 8pm</p>
+                <p class="tier-2">Saturday: 9am - 7pm</p>
+                <p class="tier-2">Sunday: 9am - 8pm</p>
+                <h2>Follow us for cleaning tips</h2>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <div class="square">
+                <h1>Contact</h1>
+                <p>The cleanic</p>
+                <p>500 Terry Francine Street</p>
+                <p>San Francisco, CA 94158</p>
+                <p>123-456-7890</p>
+                <p>info@mysite.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+        <h1>© 2035 by The Cleanic. Powered and secured by Wix</h1>
+    </div>
+
+    <!-----footer end----->
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

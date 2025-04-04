@@ -890,7 +890,7 @@ h1 {
     width: 100%;
     justify-content: right;
     position: absolute;
-    top: 1rem;
+    top: 20px;
     right: 2rem;
   }
 
@@ -919,6 +919,7 @@ h1 {
     width: 100%;
     position: absolute;
     left: 2rem;
+    top: 20px;
   }
   
   .logo.active{
